@@ -30,6 +30,7 @@
    #home {padding-top:50px;height:425px;color: #fff; background-color: #1E88E5;}
    #profile {padding-top:50px;height:350px;color: #fff; background-color: #1E88E5;}
   </style>
+  {% load staticfiles %}
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!--navbar--> 
@@ -217,8 +218,7 @@ Greatech Soft Solutions Private Limited currently have 3 Directors.
   
 <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      {% load staticfiles %}
-      <img src="{%static "gssapp/bc.jpg"%}" alt="Error 404">
+      <img src="{%static "bc.jpg"%}" alt="Error 404">
       <div class="caption">
         <h3>B C Upreti</h3>
         <p><strong>Managing Director
@@ -230,8 +230,7 @@ Greatech Soft Solutions Private Limited currently have 3 Directors.
   </div>
 <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      {% load staticfiles %}
-      <img src="{%static "gssapp/uday.jpg"%}" alt="Error 404">
+      <img src="{% static "uday.jpg" %}" alt="Error 404">
       <div class="caption">
         <h3>Uday Upreti</h3>
         <p><strong>Director
@@ -242,8 +241,7 @@ Greatech Soft Solutions Private Limited currently have 3 Directors.
   </div>
 <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      {% load staticfiles %}
-      <img src="{%static "gssapp/babita.jpg"%}" alt="Error 404">
+      <img src="{% static "babita.jpg" %}" alt="Error 404">
       <div class="caption">
         <h3>Babita Upreti</h3>
         <p><strong>Director
