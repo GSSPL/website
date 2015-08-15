@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GSS Pvt. Ltd.</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="../../dist/js/bootstrap.min.js"></script>
+ <style>
+  body {
+      position: relative; 
+  }
+#footer {
+    background-color:#6495ED;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 
+}
+  #home1 {padding-top:50px;height:350px;color: #fff; background-color: #009688;}
+   #home {padding-top:50px;height:425px;color: #fff; background-color: #1E88E5;}
+   #profile {padding-top:50px;height:350px;color: #fff; background-color: #1E88E5;}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--navbar--> 
+<nav class="navbar navbar-inverse navbar-static-top"
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" >GSS</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#home1">Home <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#projects">TnT</a></li>
+            <li><a href="#projects">Think Tank</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#events">Python Workshop</a></li>
+            <li><a href="#events"></a></li>
+            <li><a href="#events"></a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Directors<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#directors">Uday Upreti</a></li>
+            <li><a href="#directors">B C Upreti</a></li>
+            <li><a href="#directors">Babita Upreti</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" id="back">Contact Information</a></li>
+        <li><a href="https://www.google.co.in/search?q=GREATECH+SOFT+SOLUTIONS+PRIVATE+LIMITED&oq=gr&aqs=chrome.2.69i57j69i60j69i59j69i60l2.2467j0j7&sourceid=chrome&es_sm=93&ie=UTF-8" id="back">About Us</a></li>
+      </ul>
+      <form action="http://www.bing.com" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input ctype="text" name="q" lass="form-control" placeholder="Search" type="text">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+     </form>
+    </div>
+  </div>
+  
+</nav>
+<!-- navbar end -->
+<div class="container-fluid">
+<div class="jumbotron">
+  <h1>Greatech Soft Solutions Private Limited</h1>
+  <p>
+ <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+  </p>
+  <p><ahref="#" role="button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Contact Us</a></p>
+</div>
+<div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Type your message</h4>
+      </div>
+      <div class="modal-body">
+      <p>Message&hellip;</p>
+      <div id="form">
+      <form action="/" method="post" >{% csrf_token %}
+      <input name="heading" type="text" class="form-control" placeholder="Comment with your contact info" aria-describedby="sizing-addon1" >
+        
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" type="submit">Submit</button>
+      </div>
+      </form></div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div>
+<div>
+<div id="home1" class="container-fluid">
+  <h1 style="font-size:35px"><b>Welcome</b></h1>
+  <p style="font-size:25px">Greatech Soft Solutions Private Limited is a company with Corporate Identification Number(CIN) U72900DL2004PTC124607. The company was registered on 12 February 2004 at Registrar of Companies-Delhi NCR. The registered address of compant is 54-A Sainik Farms, NEW DELHI- 110062, INDIA.
+Greatech Soft Solutions Private Limited is a classified Company limited by shares. It's authorized share capital is 300,000 and paid capital is 100,000.
+Greatech Soft Solutions Private Limited currently have 3 Directors.
+</p>
+</div>
+</div>
+<br>
+<br>
+<div id="projects" class="container-fluid">
+<h3><b>PROJECTS</b></h3>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">TnT</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Think Tank</a></li>
+  </ul>
+
+   <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="home"><h5 style="font-size:25px"><strong>TARGET n TEACH</strong></h5>
+  	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Aim
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body"><p style="color:black">
+        <strong>Target n Teach</strong> (TnT) is a programme started by comapny to develop the quality of graduates. Apart from formal education we believe skill development is one of the most important factor in deciding an individual's ,and consequently, country's future. Internationally, skill development is given more importance than just formal education. It's for people to equip themselves in this competitive worldand also who want to work in a field different from their major. Institutions like Harvard and several comapnies concentrate on developing technical skills of people to make them more efficient and productive. In this cyber age, where people spend more time with computers and mobile than people, technical skills are must. Formal education is not up to date, thus we need to switch to these unconventional methos to keep us equipped according to the latest and ever changing technology. In other countries, high school kids are making big bucks by developing apps and website and here a b.tech graduate struggles with a C/C++ code. We here aim to encourage all people (not only engineers) to engage with technology along with books , to make a significant contribution and do something revolutionary. </p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Vision
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body"><p style="color:black">
+        It's an inspiration from the recent programmes by government like <strong>Digitalising India</strong> and strong focus on <strong>Skill Development</strong>. There is a huge number of graduates (specially engineers), but still the quality is questionanle. Most of the companies have to run a training session after hiring them, for months, which is like a full formal education course, all because of lack in skills. This is raises a huge doubt on the education system. So, we started this programme to make up for this reason to make our graduates lot, the best in the world.</p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+    <h4 class="panel-title">
+    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+    Future Plans
+    </a>
+    </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body"><p style="color:black">
+       We will be starting with some mainstream workshops like <strong>Web Development</strong>, <strong>Android App Development</strong>, <strong>Pyhton</strong>, etc.., but soon we will be introducing more different topics like <strong>Photography</strong>,<strong>Different Audio and Video Softwares</strong>, <strong>Photoshop</strong>, etc.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="profile"><p style="font-size:20px" class="container-fluid">
+  	<strong>Think Tank</strong> reffers to the group of developers this company will connect virtually. They together can share ideas, and work together on projects. Company will help them with this and encourage them. It"ll provide them resources and help them from this pool of people only. We strongly believe that we have an amazing quality of developers which can come up with some great ideas.
+  	<br>
+  	When soo many minds work together, we believe that miracles can happen. We will be hiring people from here only for our comapny's project. So it's like we will train them, then they will be automatically added in our think tank. And, they only will be our workforce in developing some great apps and websites.</p>
+  </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="container-fluid" id="events">
+<h6 style="font-size:30px"><strong>Events</strong></h6>
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Python Workshop</a>
+  <div class="collapse" id="collapseExample">
+  <div class="well">
+   Python workshop
+  </div>
+</div>
+
+</div>
+<br>
+<h4 id="directors" class="container-fluid" style="font-size:30px"><strong>Directors</strong></h4>
+<div class="row" >
+  
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      {% load staticfiles %}
+      <img src="{%static "gssapp/bc.jpg"%}" alt="Error 404">
+      <div class="caption">
+        <h3>B C Upreti</h3>
+        <p><strong>Managing Director
+        </strong>
+        <br>
+        </p>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      {% load staticfiles %}
+      <img src="{%static "gssapp/uday.jpg"%}" alt="Error 404">
+      <div class="caption">
+        <h3>Uday Upreti</h3>
+        <p><strong>Director
+        </strong>
+        <br>Student of Computer Science and Engineering, at Bharati Vidyapeeth College of Engineering.</p>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      {% load staticfiles %}
+      <img src="{%static "gssapp/babita.jpg"%}" alt="Error 404">
+      <div class="caption">
+        <h3>Babita Upreti</h3>
+        <p><strong>Director
+        </strong>
+        <br></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<div id="contact" class="container-fluid">
+<div class="row"></div>
+<div class="col-md-12">
+<div class="panel panel-primary">
+<div class="panel-heading"><H3>Contact Information</H3></div>
+<div class="panel-footer">
+Address : House No.211, Block No.13, Dr.Ambedkar Nagar, New Delhi-110062
+<br>
+Email : upretibc@gmail.com / udapra@gmail.com
+<br>
+Mobile no. 88002790769
+</div>
+</div></div>
+
+</div>
+</div>
+<br>
+<br>
+<div id="footer">
+Copyright © GSS
+</div>
+</body>
+
+
+<script type="text/javascript">
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+<script type="text/javascript">
+	$('#myTabs a').click(function (e) {
+    e.preventDefault()
+	$(this).tab('show')
+})
+</script>
+
+</html>
