@@ -101,15 +101,15 @@
       <p>Message&hellip;</p>
       <div id="form">
       <form action="/" method="post" >{% csrf_token %}
-      <input name="heading" type="text" class="form-control" placeholder="Comment with your contact info" aria-describedby="sizing-addon1" >
-        
+      <input name="heading" type="text">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
       <div class="modal-footer">
-      
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" type="submit">Submit</button>
-      </div>
-      </form></div>
+      <h4>Include your contact details.</h4>
+        </div>
+    </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->

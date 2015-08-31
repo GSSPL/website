@@ -13,7 +13,7 @@ def index(request):
 		context ={'msgs':a}
 		return render(request,'gssapp/index.html',context)
 	elif request.method == 'POST':
-		t = request.POST.get("gss", "")
+		t = request.POST.get("msg", "")
 		a = Msg(text=t,date=timezone.now())
 		a.save()
 		return redirect('/')
