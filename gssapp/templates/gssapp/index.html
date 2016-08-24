@@ -1,324 +1,636 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
-	<title>GSS Pvt. Ltd.</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> GSS Pvt. Ltd. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Greatech Soft Solutions Private Limited official website" />
+    <meta name="keywords" content="GSS,gss, gss pvt ltd, Greatech Soft Solutions Private Limited, Greatech Soft Solutions" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- Owl Carousel -->
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--
+	Default Theme Style
+	You can change the style.css (default color purple) to one of these styles
 
- <style>
-  body {
-      position: relative; 
-  }
-#footer {
-    background-color:#6495ED;
-    color:white;
-    clear:both;
-    text-align:center;
-   padding:5px;	 
-}
-  #home1 {color: #fff; background-color: #009688;}
-   #home {color: #fff; background-color: #1E88E5;}
-   #profile {color: #fff; background-color: #1E88E5;}
-  </style>
-  {% load staticfiles %}
+	1. pink.css
+	2. blue.css
+	3. turquoise.css
+	4. orange.css
+	5. lightblue.css
+	6. brown.css
+	7. green.css
+
+	-->
+    <link rel="stylesheet" href="css/blue.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+    /* For demo purpose only */
+    /* For Demo Purposes Only ( You can delete this anytime :-) */
+    
+    #colour-variations {
+        padding: 10px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        width: 140px;
+        position: fixed;
+        left: 0;
+        top: 100px;
+        z-index: 999999;
+        background: #fff;
+        /*border-radius: 4px;*/
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+    }
+    
+    #colour-variations.sleep {
+        margin-left: -140px;
+    }
+    
+    #colour-variations h3 {
+        text-align: center;
+        ;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #777;
+        margin: 0 0 10px 0;
+        padding: 0;
+        ;
+    }
+    
+    #colour-variations ul,
+    #colour-variations ul li {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #colour-variations li {
+        list-style: none;
+        display: inline;
+    }
+    
+    #colour-variations li a {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        float: left;
+        margin: 5px;
+    }
+    
+    #colour-variations li a[data-theme="style"] {
+        background: #6173f4;
+    }
+    
+    #colour-variations li a[data-theme="pink"] {
+        background: #f64662;
+    }
+    
+    #colour-variations li a[data-theme="blue"] {
+        background: #2185d5;
+    }
+    
+    #colour-variations li a[data-theme="turquoise"] {
+        background: #00b8a9;
+    }
+    
+    #colour-variations li a[data-theme="orange"] {
+        background: #ff6600;
+    }
+    
+    #colour-variations li a[data-theme="lightblue"] {
+        background: #5585b5;
+    }
+    
+    #colour-variations li a[data-theme="brown"] {
+        background: #a03232;
+    }
+    
+    #colour-variations li a[data-theme="green"] {
+        background: #65d269;
+    }
+    
+    .option-toggle {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 5px;
+        margin-right: -30px;
+        width: 30px;
+        height: 30px;
+        background: #f64662;
+        text-align: center;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+    }
+    
+    .option-toggle i {
+        top: 2px;
+        position: relative;
+    }
+    
+    .option-toggle:hover,
+    .option-toggle:focus,
+    .option-toggle:active {
+        color: #fff;
+        text-decoration: none;
+        outline: none;
+    }
+    
+    #cursor {
+        margin-top: -40px;
+    }
+    
+    .is-countdown {
+        border: 1px solid transparent;
+        background-color: transparent;
+    }
+    </style>
+    <!-- End demo purposes only -->
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<!--navbar--> 
-<nav class="navbar navbar-inverse navbar-static-top" data-target="#myNavbar" >
-    <div class="container fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" >GSS</a>
-    </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#home1">Home <span class="sr-only">(current)</span></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#projects">TnT</a></li>
-            <li><a href="#projects">Think Tank</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#uevents">Upcoming Events</a></li>
-            <li><a href="#pevents">Past Events</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Directors<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#directors">Uday Upreti</a></li>
-            <li><a href="#directors">B C Upreti</a></li>
-            <li><a href="#directors">Babita Upreti</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact" id="back">Contact Information</a></li>
-        <li><a href="https://www.google.co.in/search?q=GREATECH+SOFT+SOLUTIONS+PRIVATE+LIMITED&oq=gr&aqs=chrome.2.69i57j69i60j69i59j69i60l2.2467j0j7&sourceid=chrome&es_sm=93&ie=UTF-8" id="back">About Us</a></li>
-      </ul>
-      <form action="http://www.bing.com" class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input ctype="text" name="q" lass="form-control" placeholder="Search" type="text">
+<body>
+    <header role="banner" id="fh5co-header">
+        <div class="container">
+            <!-- <div class="row"> -->
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <!-- Mobile Toggle Menu Button -->
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <a class="navbar-brand" href="index.html">Greatech Soft Solutions</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+                        <li><a href="#" data-nav-section="about"><span>About</span></a></li>
+                        <li><a href="#" data-nav-section="team"><span>Team</span></a></li>
+                        <li><a href="#" data-nav-section="events"><span>Events</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- </div> -->
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form></div>
-    </div>
-</nav>
-<!-- navbar end -->
-<div class="container-fluid">
-<div class="jumbotron">
-  <h1>Greatech Soft Solutions Private Limited</h1>
-  <p>
- <div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
-  </p>
-  <p><ahref="#" role="button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Contact Us</a></p>
-  <a href="https://www.facebook.com/GSS.1201">Link to our facebook page.</a>
-</div>
-<div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
-  <div class="modal-dialog">
+    </header>
+    <div data-section="home">
+        <div class="owl-carousel owl-carousel-fullwidth">
+            <!-- You may change the background color here. -->
+            <div class="item" style="background-image:url(images/1234.png)">
+                <div class="overlay"></div>
+                <div class="container" style="position: relative;">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <div class="fh5co-owl-text-wrap">
+                                <div class="fh5co-owl-text">
+                                <h1 class="fh5co-lead"> <span class="fh5co-lead slider-head "> WELCOME ... <span id="cursor">|</span></span></h1>
+                                <!--
+                                    <h1 class="fh5co-lead"> $ <span class="fh5co-lead slider-head "> Cyber Security ... <span id="cursor">|</span></span></h1>
+                                    <h2 class="fh5co-sub-lead"> August 23rd 2016, BVCOE Library</h2>
 
-    <div class="modal-content">
+		                            <div class="row">
+		                            	<div class="col-sm-4">
+		                            		<div class="well custom-well">
+												<span id="daysCounter">00</span>
+												<p class="lead"> Days </p>
+		                            		</div>
+		                            	</div>
+		                            	<div class="col-sm-4">
+		                            		<div class="well custom-well">
+		                            			<span id="hoursCounter">00</span>
+												<p class="lead"> Hours </p>
 
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Type your message</h4>
-      </div>
-      <div class="modal-body">
-      <p>Message&hellip;</p>
-      <div id="form">
-      <form action="/" method="post" >{% csrf_token %}
-      <input name="heading" type="text">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-      <h4>Include your contact details.</h4>
+		                            		</div>
+		                            	</div>
+		                            	<div class="col-sm-4">
+		                            		<div class="well custom-well">
+		                            			<span id="minutesCounter">00</span>
+												<p class="lead"> Minutes </p>
+
+		                            		</div> -->
+		                            	</div>
+		                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 		    <div class="item" style="background: #352f44;">
+		    	<div class="container" style="position: relative;">
+		    		<div class="row">
+					    <div class="col-md-7 col-sm-7">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text">
+						    		<h1 class="fh5co-lead to-animate">Case Study Title</h1>
+									<h2 class="fh5co-sub-lead to-animate">100% Free Fully Responsive HTML5 Bootstrap Template. Crafted with love by the fine folks at <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a></h3>
+									<p class="to-animate-2"><a href="#" class="btn btn-primary btn-lg">View Case Study</a></p>
+						    	</div>
+						    </div>
+					    </div>
+					    <div class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+					    	<div class="iphone to-animate-2"><img src="images/iphone-2.png" alt="Free HTML5 Template by FREEHTML5.co"></div>
+					    </div>
+
+		    		</div>
+		    	</div>
+		    </div> -->
+            <!-- You may change the background color here.  -->
+            <!-- 		    <div class="item" style="background: #38569f;">
+		    	<div class="container" style="position: relative;">
+		    		<div class="row">
+		    			<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text">
+						    		<h1 class="fh5co-lead to-animate">Case Study Title</h1>
+									<h2 class="fh5co-sub-lead to-animate">100% Free Fully Responsive HTML5 Bootstrap Template. Crafted with love by the fine folks at <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a></h2>
+									<p class="to-animate-2"><a href="#" class="btn btn-primary btn-lg">View Case Study</a></p>
+						    	</div>
+						    </div>
+					    </div>
+					    <div class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
+					    	<div class="iphone to-animate-2"><img src="images/iphone-1.png" alt="Free HTML5 Template by FREEHTML5.co"></div>
+					    </div>
+
+		    		</div>
+		    	</div>
+		    </div> -->
         </div>
     </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    <div id="fh5co-about-us" data-section="about">
+        <div class="container">
+            <div class="row row-bottom-padded-lg" id="about-us">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="to-animate">About Us</h2>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 to-animate">
+                            <h3> Greatech Soft Solutions Private Limited is a company with Corporate Identification Number(CIN) U72900DL2004PTC124607. The company was registered on 12 February 2004 at Registrar of Companies-Delhi NCR. The registered address of compant is 54-A Sainik Farms, NEW DELHI- 110062, INDIA. Greatech Soft Solutions Private Limited is a classified Company limited by shares. It's authorized share capital is 300,000 and paid capital is 100,000. Greatech Soft Solutions Private Limited currently have 3 Directors.
 
-<div>
-<div>
-<div id="home1" class="container-fluid">
-  <h1 style="font-size:35px"><b>Welcome</b></h1>
-  <p style="font-size:25px">Greatech Soft Solutions Private Limited is a company with Corporate Identification Number(CIN) U72900DL2004PTC124607. The company was registered on 12 February 2004 at Registrar of Companies-Delhi NCR. The registered address of compant is 54-A Sainik Farms, NEW DELHI- 110062, INDIA.
-Greatech Soft Solutions Private Limited is a classified Company limited by shares. It's authorized share capital is 300,000 and paid capital is 100,000.
-Greatech Soft Solutions Private Limited currently have 3 Directors.
-</p>
-</div>
-</div>
-<br>
-<br>
-<div id="projects" class="container-fluid">
-<h3><b>PROJECTS</b></h3>
-<hr>
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">TnT</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Think Tank</a></li>
-  </ul>
+</h3>
+                        </div>
+                    </div>
+                </div>
+                 				<div class="col-md-6 to-animate">
+					<img src="images/img_1.jpg" class="img-responsive img-rounded" alt="Free HTML5 Template">
+				</div>
+				<div class="col-md-6 to-animate">
+					<h2><b>TARGET & TEACH</b></h2>
+					<p>Target n Teach (TnT) is a programme started by comapny to develop the quality of graduates. Apart from formal education we believe skill development is one of the most important factor in deciding an individual's ,and consequently, country's future. Internationally, skill development is given more importance than just formal education. In this cyber age, where people spend more time with computers and mobile than people, technical skills are must. Formal education is not up to date, thus we need to switch to these unconventional methods to keep us equipped according to the latest and ever changing technology. We here aim to encourage all people (not only engineers) to engage with technology along with books , to make a significant contribution and do something revolutionary.</p>
+					<p><a href="#team" class="btn btn-primary">Meet the team</a></p>
+				</div>
+            </div>
+            <div class="row" id="team" data-section="team">
+                <div class="col-md-12 section-heading text-center to-animate">
+                    <h2>Meet the Team</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="row row-bottom-padded-lg">
+                        <div class="col-md-6 text-center to-animate">
+                            <div class="person">
+                                <img src="images/2.png" class="img-responsive img-rounded" alt="Person">
+                                <h3 class="name">Uday Upreti</h3>
+                                <div class="position">Director</div>
+                                <!-- <p></p> -->
+                                <ul class="social social-circle">
+                                    <li><a href="https://github.com/uday1201"><i class="icon-github"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/uday-upreti-02a521103"><i class="icon-linkedin"></i></a></li>
+                                    <li><a href="https://www.facebook.com/uday.upreti"><i class="icon-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center to-animate">
+                            <div class="person">
+                                <img src="images/1.png" class="img-responsive img-rounded" alt="Person">
+                                <h3 class="name">B C Upreti</h3>
+                                <div class="position">Managing Director</div>
+                                <!-- <p></p> -->
+                                <ul class="social social-circle">
+                                    
+                                    
+                                    <li><a href="https://www.facebook.com/bhaskar.upreti.14"><i class="icon-facebook"></i></a></li>
 
-   <div class="tab-content">
-  <div role="tabpanel" class="tab-pane fade in active" id="home"><h5 style="font-size:25px"><strong>TARGET n TEACH</strong></h5>
-  	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Aim
-        </a>
-      </h4>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body"><p style="color:black">
-        <strong>Target n Teach</strong> (TnT) is a programme started by comapny to develop the quality of graduates. Apart from formal education we believe skill development is one of the most important factor in deciding an individual's ,and consequently, country's future. Internationally, skill development is given more importance than just formal education. It's for people to equip themselves in this competitive worldand also who want to work in a field different from their major. Institutions like Harvard and several comapnies concentrate on developing technical skills of people to make them more efficient and productive. In this cyber age, where people spend more time with computers and mobile than people, technical skills are must. Formal education is not up to date, thus we need to switch to these unconventional methos to keep us equipped according to the latest and ever changing technology. In other countries, high school kids are making big bucks by developing apps and website and here a b.tech graduate struggles with a C/C++ code. We here aim to encourage all people (not only engineers) to engage with technology along with books , to make a significant contribution and do something revolutionary. </p>
-      </div>
+<!--     <div id="fh5co-our-services" data-section="projects">
+        <div class="container">
+            <div class="row row-bottom-padded-sm">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="to-animate">Our Projects</h2>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 to-animate">
+                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box to-animate">
+                        <div class="icon colored-1"><span><i class="icon-mustache"></i></span></div>
+                        <h3>100% free</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    </div>
+                    <div class="box to-animate">
+                        <div class="icon colored-4"><span><i class="icon-heart"></i></span></div>
+                        <h3>Made with love</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box to-animate">
+                        <div class="icon colored-2"><span><i class="icon-screen-desktop"></i></span></div>
+                        <h3>Fully responsive</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                    <div class="box to-animate">
+                        <div class="icon colored-5"><span><i class="icon-rocket"></i></span></div>
+                        <h3>Fast &amp; light</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box to-animate">
+                        <div class="icon colored-3"><span><i class="icon-eye"></i></span></div>
+                        <h3>Retina-ready</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    </div>
+                    <div class="box to-animate">
+                        <div class="icon colored-6"><span><i class="icon-user"></i></span></div>
+                        <h3>For creative like you!</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Vision
-        </a>
-      </h4>
+ -->
+
+ <!--     <div id="fh5co-features" data-section="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="single-animate animate-features-1">Features</h2>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
+                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-bottom-padded-sm">
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+                    <div class="fh5co-icon"><i class="icon-present"></i></div>
+                    <div class="fh5co-desc">
+                        <h3>100% Free</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+                    <div class="fh5co-icon"><i class="icon-eye"></i></div>
+                    <div class="fh5co-desc">
+                        <h3>Retina Ready</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block visible-xs-block"></div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+                    <div class="fh5co-icon"><i class="icon-crop"></i></div>
+                    <div class="fh5co-desc">
+                        <h3>Fully Responsive</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+                    <div class="fh5co-icon"><i class="icon-speedometer"></i></div>
+                    <div class="fh5co-desc">
+                        <h3>Lightweight</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block visible-xs-block"></div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+                    <div class="fh5co-icon"><i class="icon-heart"></i></div>
+                    <div class="fh5co-desc">
+                        <h3>Made with Love</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+                    <div class="fh5co-icon"><i class="icon-umbrella"></i></div>
+                    <div class="fh5co-desc">
+                        <h3>Eco Friendly</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block visible-xs-block"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
+                    <a href="#" class="btn btn-primary btn-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- 	<div id="fh5co-testimonials" data-section="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Happy Clients Says...</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					</div>
+
+
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe, Founder <a href="#">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div> -->
+    <div id="fh5co-press" data-section="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="single-animate animate-press-1">Our Events</h2>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 subtext single-animate animate-press-2">
+                            <h3>Some of our poplular events</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Press Item -->
+                    <div class="fh5co-press-item to-animate">
+                        <div class="fh5co-press-img" style="background-image: url(images/e1.png)">
+                        </div>
+                        <div class="fh5co-press-text">WEB DEVELOPMENT WORKSHOP (DTU) <small> (05.09.2015 - 06.09.2015)</small> <span class="fh5co-border"></span></h3>
+                            <p>Congratulations to our team for successfully conducting our first workshop on Web Development in DTU. 63 students from over 6 colleges came, like DTU,BVP, MAIT, Hindu , Krishna Engineering College (UPTU), etc. It was great to see soo much enthusiasm in these kids from B.tech ,BCA and B.Sc. We hope of conducting many more workshops like this and wish they all be a big success like this one.</p>
+                            <br/>
+                        </div>
+                    </div>
+                    <!-- Press Item -->
+                
+                    <div class="fh5co-press-item to-animate">
+                        <div class="fh5co-press-img" style="background-image: url(images/e2.png)">
+                        </div>
+                        <div class="fh5co-press-text">MACHINE LEARNING WORKSHOP (DTU) <small> (10.09.2016 - 11.09.2016)</small> <span class="fh5co-border"></span></h3>
+                            <p>Congratulations to our team for successfully conducting our first workshop on Web Development in DTU. 63 students from over 6 colleges came, like DTU,BVP, MAIT, Hindu , Krishna Engineering College (UPTU), etc. It was great to see soo much enthusiasm in these kids from B.tech ,BCA and B.Sc. We hope of conducting many more workshops like this and wish they all be a big success like this one.</p>
+                            <br/>
+                        </div>
+                    </div>
+                    
+              
+                    <!-- Press Item -->
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body"><p style="color:black">
-        It's an inspiration from the recent programmes by government like <strong>Digitalising India</strong> and strong focus on <strong>Skill Development</strong>. There is a huge number of graduates (specially engineers), but still the quality is questionanle. Most of the companies have to run a training session after hiring them, for months, which is like a full formal education course, all because of lack in skills. This is raises a huge doubt on the education system. So, we started this programme to make up for this reason to make our graduates lot, the best in the world.</p>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-    <h4 class="panel-title">
-    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-    Future Plans
-    </a>
-    </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body"><p style="color:black">
-       We will be starting with some mainstream workshops like <strong>Web Development</strong>, <strong>Android App Development</strong>, <strong>Pyhton</strong>, etc.., but soon we will be introducing more different topics like <strong>Photography</strong>,<strong>Different Audio and Video Softwares</strong>, <strong>Photoshop</strong>, etc.</p>
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
-  <div role="tabpanel" class="tab-pane fade" id="profile"><p style="font-size:20px" class="container-fluid">
-  	<strong>Think Tank</strong> reffers to the group of developers this company will connect virtually. They together can share ideas, and work together on projects. Company will help them with this and encourage them. It"ll provide them resources and help them from this pool of people only. We strongly believe that we have an amazing quality of developers which can come up with some great ideas.
-  	<br>
-  	When soo many minds work together, we believe that miracles can happen. We will be hiring people from here only for our comapny's project. So it's like we will train them, then they will be automatically added in our think tank. And, they only will be our workforce in developing some great apps and websites.</p>
-  </div>
-  </div>
-</div>
-</div>
-<br>
-<div class="container-fluid" id="uevents">
-<h6 style="font-size:30px"><strong>Upcoming Events</strong></h6>
-<hr>
-
-</div>
-<div class="container-fluid" id="pevents">
-<h6 style="font-size:30px"><strong>Past Events</strong></h6>
-<hr>
-<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Web Development Workshop</a>
-  <div class="collapse" id="collapseExample">
-  <div class="well">
-  <p>Congratulations to our team for successfully conducting our first workshop on Web Development in DTU. 63 students from over 6 colleges came, like DTU,BVP,  MAIT, Hindu , Krishna Engineering College (UPTU), etc. It was great to see soo much enthusiasm in these kids from B.tech ,BCA and B.Sc. We hope of conducting many more workshops like this and wish they all be a big success like this one.</p>
-  <img src="{% static "w1.jpg" %}" alt="Error 404" style="height:450px;width:600px;float:centre">
-  <img src="{% static "w2.jpg" %}" alt="Error 404" style="height:450px;width:600px;float:centre">
-  <img src="{% static "w3.jpg" %}" alt="Error 404" style="height:450px;width:600px;float:centre">
-  </div>
-</div>
-
-</div>
-<br>
-<h4 id="directors" class="container-fluid" style="font-size:30px"><strong>Directors</strong></h4>
-<hr>
-<div class="media">
-  <div class="media-left">
-    <a href="https://www.facebook.com/bhaskar.upreti.14">
-      <img class="media-object" style="height:75px;width:75px" src="{%static "bc.jpg"%}" alt="Error 404">
-    </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">B C Upreti</h4>
-    <strong>Managing Director
-        </strong>
-        <br>
-  </div>
-</div>
-
-<div class="media">
-  <div class="media-left">
-    <a href="https://www.facebook.com/uday.upreti">
-      <img class="media-object" style="height:75px;width:75px" src="{%static "uday.jpg"%}" alt="Error 404">
-    </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">Uday Upreti</h4>
-    <strong>Director
-        </strong>
-        <br>
-    Student of Computer Science and Engineering, at Bharati Vidyapeeth College of Engineering. Programmer in C, python and java. Web developer, developed this website. Member of Computer Society of India and Google Developers Group.
-  </div>
-</div>
-
-<div class="media">
-  <div class="media-left">
-    <a href="https://www.facebook.com/babita.upreti.10">
-      <img class="media-object" style="height:75px;width:75px" src="{%static "babita.jpg"%}" alt="Error 404">
-    </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">Babita Upreti</h4>
-    <strong>Director
-        </strong>
-  </div>
-</div>
-
-<br>
-
-
-<div id="contact" class="container-fluid">
-<div class="row"></div>
-<div class="col-md-12">
-<div class="panel panel-primary">
-<div class="panel-heading"><H3>Contact Information</H3></div>
-<div class="panel-footer">
-Address : 211, Block No.13, Dr.Ambedkar Nagar, New Delhi-110062
-<br>
-Email : upretibc@gmail.com / udapra@gmail.com
-<br>
-Mobile no. 88002790769
-<br>
-Facebook : <a href="https://www.facebook.com/GSS.1201">Greatech Soft Solutions Private Limited</a>
-</div>
-</div></div>
-
-</div>
-</div>
-<br>
-<br>
-<div id="footer">
-Developed by - Uday Upreti : Copyright © GSS 
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-<script src="../../dist/js/bootstrap.min.js"></script>
-<script src="../../assets/js/vendor/holder.min.js"></script>
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
-
-
-
-<script type="text/javascript">
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
-</script>
-<script type="text/javascript">
-	$('#myTabs a').click(function (e) {
-    e.preventDefault()
-	$(this).tab('show')
-})
-</script>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '741202766002552',
-      xfbml      : true,
-      version    : 'v2.4'
+    <footer id="footer" role="contentinfo">
+        <div class="container">
+            <div class="row row-bottom-padded-sm">
+                <div class="col-md-12">
+                    <p class="copyright text-center">&copy; 2012 GSS Pvt. Ltd. All Rights Reserved.
+                        <br> Crafted by Uday Upreti </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="social social-circle">
+                        
+                        <li><a href="https://www.facebook.com/GSS.1201/"><i class="icon-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- For demo purposes Only ( You may delete this anytime :-) -->
+    <!-- 	<div id="colour-variations">
+		<a class="option-toggle"><i class="icon-gear"></i></a>
+		<h3>Preset Colors</h3>
+		<ul>
+			<li><a href="javascript: void(0);" data-theme="style"></a></li>
+			<li><a href="javascript: void(0);" data-theme="pink"></a></li>
+			<li><a href="javascript: void(0);" data-theme="blue"></a></li>
+			<li><a href="javascript: void(0);" data-theme="turquoise"></a></li>
+			<li><a href="javascript: void(0);" data-theme="orange"></a></li>
+			<li><a href="javascript: void(0);" data-theme="lightblue"></a></li>
+			<li><a href="javascript: void(0);" data-theme="brown"></a></li>
+			<li><a href="javascript: void(0);" data-theme="green"></a></li>
+		</ul>
+	</div> -->
+    <!-- End demo purposes only -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Owl Carousel -->
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+    <script src="js/jquery.style.switcher.js"></script>
+    <script>
+    $(function() {
+        $('#colour-variations ul').styleSwitcher({
+            defaultThemeId: 'theme-switch',
+            hasPreview: false,
+            cookie: {
+                expires: 30,
+                isManagingLoad: true
+            }
+        });
+        $('.option-toggle').click(function() {
+            $('#colour-variations').toggleClass('sleep');
+        });
     });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+    </script>
+    <!-- End demo purposes only -->
+    <!-- Main JS (Do not remove) -->
+    <script src="js/main.js"></script>
+</body>
 
 </html>
