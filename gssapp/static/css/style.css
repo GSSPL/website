@@ -1128,4 +1128,8 @@ h1, h2, h3, h4, h5, h6 {
   animation-fill-mode: both;
 }
 
+.fh5co-press-img
+{
+  background-image: url("{% static "images/e1.png"%}")
+}
 /*# sourceMappingURL=style.css.map */
