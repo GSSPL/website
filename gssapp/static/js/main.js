@@ -459,7 +459,7 @@
 
 		var refreshTime = function(){
 			var today = new Date();
-			var eventDay = new Date('September 30, 2016 09:00:00');
+			var eventDay = new Date('February 28, 2017 09:00:00');
 			var difference = eventDay.getTime() - today.getTime();
 			var days = Math.floor(difference/(60*60*1000*24));
 			var left = difference%(60*60*1000*24)
